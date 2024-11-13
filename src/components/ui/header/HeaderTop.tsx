@@ -98,6 +98,20 @@ export const HeaderTop = () => {
             <div className={`header__top-burgerMenu ${isOpen && "header__top-burgerMenu-active"}`}>
                 <div className="header__burger">
                     {/* <div className="header__burger-close" onClick={()=>setIsOpen(false)} /> */}
+                    <div className="header__bottom-menu f">
+                <div className="header__bottom-menu-item">
+                    <img src="/Images/sale.png" />
+                </div>
+                <div className="header__bottom-menu-item">
+                    <img src="/Images/icons8-reload-50.png" />
+                </div>
+                <div className="header__bottom-menu-item">
+                    <img src="/Images/icons8-add-document-64.png" />
+                </div>
+                <div className="header__bottom-menu-item">
+                    <img src="/Images/icons8-delivery-64.png" />
+                </div>
+            </div>
                 <HeaderSearch className="header__top-burgerMenu-search" />
                 <div className="header__top-links f">
                     <div className="header__top-links-svg header__top-links-store r">

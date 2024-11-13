@@ -116,7 +116,7 @@ export const HeaderBottom = () => {
                             0.00 грн
                         </span>
                     </div>
-                    <div className="header__bottom-cart-checkout">
+                    <div className="header__bottom-cart-checkout d">
                         <span>
                             Сума
                         </span>
