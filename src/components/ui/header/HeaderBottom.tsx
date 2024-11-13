@@ -93,16 +93,16 @@ export const HeaderBottom = () => {
             </div>
             <div className="header__bottom-menu">
                 <div className="header__bottom-menu-item">
-                    <img src="/Images/sale.png" />
+                    <img src="Images/sale.png" />
                 </div>
                 <div className="header__bottom-menu-item">
-                    <img src="/Images/icons8-reload-50.png" />
+                    <img src="Images/icons8-reload-50.png" />
                 </div>
                 <div className="header__bottom-menu-item">
-                    <img src="/Images/icons8-add-document-64.png" />
+                    <img src="Images/icons8-add-document-64.png" />
                 </div>
                 <div className="header__bottom-menu-item">
-                    <img src="/Images/icons8-delivery-64.png" />
+                    <img src="Images/icons8-delivery-64.png" />
                 </div>
             </div>
             <div className="header__bottom-cart">

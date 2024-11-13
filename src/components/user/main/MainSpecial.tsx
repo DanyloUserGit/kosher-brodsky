@@ -57,7 +57,7 @@ export const MainSpecial = () => {
             <MainSlider sliderProperties={settings} className="main-content__special-slider">
                 <div className="main-content__special-slider-item">
                     <MainCard 
-                        imgSrc="/Images/cardShoco.png"
+                        imgSrc="Images/cardShoco.png"
                         title="ACHVA Brownie Cake пиріг брауні, 400 г"
                         price={280}
                         validDate={new Date()}
@@ -65,7 +65,7 @@ export const MainSpecial = () => {
                 </div>
                 <div className="main-content__special-slider-item">
                     <MainCard 
-                        imgSrc="/Images/cardShoco.png"
+                        imgSrc="Images/cardShoco.png"
                         title="ACHVA Brownie Cake пиріг брауні, 400 г"
                         price={280}
                         validDate={new Date()}
@@ -73,7 +73,7 @@ export const MainSpecial = () => {
                 </div>
                 <div className="main-content__special-slider-item">
                     <MainCard 
-                        imgSrc="/Images/cardShoco.png"
+                        imgSrc="Images/cardShoco.png"
                         title="ACHVA Brownie Cake пиріг брауні, 400 г"
                         price={280}
                         validDate={new Date()}
@@ -81,7 +81,7 @@ export const MainSpecial = () => {
                 </div>
                 <div className="main-content__special-slider-item">
                     <MainCard 
-                        imgSrc="/Images/cardShoco.png"
+                        imgSrc="Images/cardShoco.png"
                         title="ACHVA Brownie Cake пиріг брауні, 400 г"
                         price={280}
                         validDate={new Date()}
@@ -89,7 +89,7 @@ export const MainSpecial = () => {
                 </div>
                 <div className="main-content__special-slider-item">
                     <MainCard 
-                        imgSrc="/Images/cardShoco.png"
+                        imgSrc="Images/cardShoco.png"
                         title="ACHVA Brownie Cake пиріг брауні, 400 г"
                         price={280}
                         validDate={new Date()}
@@ -97,7 +97,7 @@ export const MainSpecial = () => {
                 </div>
                 <div className="main-content__special-slider-item">
                     <MainCard 
-                        imgSrc="/Images/cardShoco.png"
+                        imgSrc="Images/cardShoco.png"
                         title="ACHVA Brownie Cake пиріг брауні, 400 г"
                         price={280}
                         validDate={new Date()}
@@ -117,7 +117,7 @@ export const MainSpecial = () => {
             <MainSlider sliderProperties={settings} className="main-content__special-slider">
                 <div className="main-content__special-slider-item">
                     <MainCard 
-                        imgSrc="/Images/cardShoco.png"
+                        imgSrc="Images/cardShoco.png"
                         title="ACHVA Brownie Cake пиріг брауні, 400 г"
                         price={280}
                         validDate={new Date()}
@@ -125,7 +125,7 @@ export const MainSpecial = () => {
                 </div>
                 <div className="main-content__special-slider-item">
                     <MainCard 
-                        imgSrc="/Images/cardShoco.png"
+                        imgSrc="Images/cardShoco.png"
                         title="ACHVA Brownie Cake пиріг брауні, 400 г"
                         price={280}
                         validDate={new Date()}
@@ -133,7 +133,7 @@ export const MainSpecial = () => {
                 </div>
                 <div className="main-content__special-slider-item">
                     <MainCard 
-                        imgSrc="/Images/cardShoco.png"
+                        imgSrc="Images/cardShoco.png"
                         title="ACHVA Brownie Cake пиріг брауні, 400 г"
                         price={280}
                         validDate={new Date()}
@@ -141,7 +141,7 @@ export const MainSpecial = () => {
                 </div>
                 <div className="main-content__special-slider-item">
                     <MainCard 
-                        imgSrc="/Images/cardShoco.png"
+                        imgSrc="Images/cardShoco.png"
                         title="ACHVA Brownie Cake пиріг брауні, 400 г"
                         price={280}
                         validDate={new Date()}
@@ -149,7 +149,7 @@ export const MainSpecial = () => {
                 </div>
                 <div className="main-content__special-slider-item">
                     <MainCard 
-                        imgSrc="/Images/cardShoco.png"
+                        imgSrc="Images/cardShoco.png"
                         title="ACHVA Brownie Cake пиріг брауні, 400 г"
                         price={280}
                         validDate={new Date()}
@@ -157,7 +157,7 @@ export const MainSpecial = () => {
                 </div>
                 <div className="main-content__special-slider-item">
                     <MainCard 
-                        imgSrc="/Images/cardShoco.png"
+                        imgSrc="Images/cardShoco.png"
                         title="ACHVA Brownie Cake пиріг брауні, 400 г"
                         price={280}
                         validDate={new Date()}
@@ -177,7 +177,7 @@ export const MainSpecial = () => {
             <MainSlider sliderProperties={settings} className="main-content__special-slider">
                 <div className="main-content__special-slider-item">
                     <MainCard 
-                        imgSrc="/Images/cardShoco.png"
+                        imgSrc="Images/cardShoco.png"
                         title="ACHVA Brownie Cake пиріг брауні, 400 г"
                         price={280}
                         validDate={new Date()}
@@ -185,7 +185,7 @@ export const MainSpecial = () => {
                 </div>
                 <div className="main-content__special-slider-item">
                     <MainCard 
-                        imgSrc="/Images/cardShoco.png"
+                        imgSrc="Images/cardShoco.png"
                         title="ACHVA Brownie Cake пиріг брауні, 400 г"
                         price={280}
                         validDate={new Date()}
@@ -193,7 +193,7 @@ export const MainSpecial = () => {
                 </div>
                 <div className="main-content__special-slider-item">
                     <MainCard 
-                        imgSrc="/Images/cardShoco.png"
+                        imgSrc="Images/cardShoco.png"
                         title="ACHVA Brownie Cake пиріг брауні, 400 г"
                         price={280}
                         validDate={new Date()}
@@ -201,7 +201,7 @@ export const MainSpecial = () => {
                 </div>
                 <div className="main-content__special-slider-item">
                     <MainCard 
-                        imgSrc="/Images/cardShoco.png"
+                        imgSrc="Images/cardShoco.png"
                         title="ACHVA Brownie Cake пиріг брауні, 400 г"
                         price={280}
                         validDate={new Date()}
@@ -209,7 +209,7 @@ export const MainSpecial = () => {
                 </div>
                 <div className="main-content__special-slider-item">
                     <MainCard 
-                        imgSrc="/Images/cardShoco.png"
+                        imgSrc="Images/cardShoco.png"
                         title="ACHVA Brownie Cake пиріг брауні, 400 г"
                         price={280}
                         validDate={new Date()}
@@ -217,7 +217,7 @@ export const MainSpecial = () => {
                 </div>
                 <div className="main-content__special-slider-item">
                     <MainCard 
-                        imgSrc="/Images/cardShoco.png"
+                        imgSrc="Images/cardShoco.png"
                         title="ACHVA Brownie Cake пиріг брауні, 400 г"
                         price={280}
                         validDate={new Date()}
