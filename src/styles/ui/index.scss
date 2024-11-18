@@ -319,6 +319,8 @@
             &-link{
                 margin: auto 0;
                 color: #616161;
+                user-select: none;
+                cursor: pointer;
             }
             &-store::after{
                 content: '';
@@ -459,11 +461,25 @@
     background-color: #005baa;
     color: white;
     text-align: center;
-    padding: 200px 0;
+    padding: 50px 0;
     display: flex;
     justify-content: center;
+    position: relative;
+    &-min{
+        width: 100%;
+        position: absolute;
+        bottom: 0;
+        padding: 10px;
+        text-align: start;
+        border-top: 1px solid #fff;
+        span{
+            margin: 0 40px;
+        }
+    }
     &__content{
         display: flex;
+        width: 100%;
+        justify-content: center;
     }
     &__menu{
         padding: 10px;
@@ -591,4 +607,8 @@
             }
         }   
     }
+}
+b{
+    max-width: 100px !important;
+    right: 0 !important;
 }

@@ -26,7 +26,7 @@ export const HeaderBottom = () => {
                 <div className="header__bottom-start-btn" onClick={()=>{
                     setIsOpen(!isOpen);
                 }}>
-                    Start Shopping +
+                    Каталог
                 </div>
                 <div className={`header__bottom-start-list ${isOpen && "header__bottom-start-list-active"}`}>
                     <div className="header__bottom-start-list-item">

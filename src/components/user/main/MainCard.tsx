@@ -17,7 +17,7 @@ export const MainCard = ({
                 <img src={imgSrc} />
                 <div className="main-content__special-card-content-desc">
                     <div className="main-content__special-card-content-desc-btn">
-                        Лише {price}
+                        Лише {price}₴
                     </div>
                     <span className="main-content__special-card-content-desc-title">
                         {title} <br />

@@ -3,6 +3,7 @@ import { LocationIcon } from "../../svg/LocationIcon";
 import { LogoIconFooter } from "../../svg/LogoIconFooter";
 import { PhoneIcon } from "../../svg/PhoneIcon";
 import { StoreIcon } from "../../svg/StoreIcon";
+import { FooterMin } from "./FooterMin";
 
 export const Footer = () => {
 
@@ -52,13 +53,14 @@ export const Footer = () => {
                         <li className="footer__menu-element">
                             <LocationIcon />
                             <div className="footer__menu-element-text">
-                                <b>м. Київ, вул. Шота Руставелі 13</b>
-                                Час роботи ПН-СБ: 09:00–20:00; <br /> Нд: 10:00 – 17:00
+                                <b>м. Київ, вул. Шота Руставелі 13</b> <br />
+                                Час роботи ПН-ПТ: 09:00–20:00; <br /> СБ: Вихідний <br />Нд: 10:00 – 17:00
                             </div>
                         </li>
                     </ul>
                 </div>
             </div>
+            <FooterMin />
         </div>
     );
 }

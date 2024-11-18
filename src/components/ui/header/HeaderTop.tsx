@@ -89,7 +89,7 @@ export const HeaderTop = () => {
                             </div>
                         </div>
                     </div>
-                    <span className="header__top-links-link">Login</span>
+                    <span className="header__top-links-link">Вхід</span>
                 </div>
                 <div className="header__top-menu">
                     <Hamburger toggled={isOpen} size={20} toggle={setIsOpen}/>
@@ -98,37 +98,23 @@ export const HeaderTop = () => {
             <div className={`header__top-burgerMenu ${isOpen && "header__top-burgerMenu-active"}`}>
                 <div className="header__burger">
                     {/* <div className="header__burger-close" onClick={()=>setIsOpen(false)} /> */}
-                    <div className="header__bottom-menu f">
-                <div className="header__bottom-menu-item">
-                    <img src="Images/sale.png" />
-                </div>
-                <div className="header__bottom-menu-item">
-                    <img src="Images/icons8-reload-50.png" />
-                </div>
-                <div className="header__bottom-menu-item">
-                    <img src="Images/icons8-add-document-64.png" />
-                </div>
-                <div className="header__bottom-menu-item">
-                    <img src="Images/icons8-delivery-64.png" />
-                </div>
-            </div>
                 <HeaderSearch className="header__top-burgerMenu-search" />
                 <div className="header__top-links f">
                     <div className="header__top-links-svg header__top-links-store r">
                         <NewsIcon />
                     </div>
                     <div className="header__dropdown">
-                        <div className="header__dropdown-btn" onClick={()=>setIsOpenD1(!isOpenD1)}>
+                        <div className="header__dropdown-btn">
                             <StoreIcon />
                             <span>
                                 м. Київ, вул. Шота Руставелі 13 <br />
                                 +38(063) 504-23-93
                             </span>
-                            {!isOpenD1 ? <div className="chevron-down header__dropdown-btn-chevron">
+                            {/* {!isOpenD1 ? <div className="chevron-down header__dropdown-btn-chevron">
                                 <IconRightchevron />
                             </div> : <div className="chevron-up header__dropdown-btn-chevron">
                                 <IconRightchevron />
-                            </div>}
+                            </div>} */}
                         </div>
                         <div className={`header__dropdown-list ${!isOpenD1 ? "header__dropdown-inactive" : ""}`}>
                             <div className="header__dropdown-list-item">
@@ -143,6 +129,20 @@ export const HeaderTop = () => {
                         </div>
                     </div>
                 </div>
+                <div className="header__bottom-menu f">
+                <div className="header__bottom-menu-item">
+                    <img src="Images/sale.png" />
+                </div>
+                <div className="header__bottom-menu-item">
+                    <img src="Images/icons8-reload-50.png" />
+                </div>
+                <div className="header__bottom-menu-item">
+                    <img src="Images/icons8-add-document-64.png" />
+                </div>
+                <div className="header__bottom-menu-item">
+                    <img src="Images/icons8-delivery-64.png" />
+                </div>
+            </div>
                 <div className="header__top-links f">
                     <div className="header__dropdown">
                         <div className="header__dropdown-btn header__top-links-svg" onClick={()=>setIsOpenD2(!isOpenD2)}>
@@ -155,16 +155,16 @@ export const HeaderTop = () => {
                             {lang === Flags.IW && <>
                                 <IconIw />
                             </>}
-                            <span>
+                            <span style={{marginRight: "10px"}}>
                                 {lang}
                             </span>
-                            {!isOpenD2 ? <div style={{padding:"0 8px"}} className="chevron-down header__dropdown-btn-chevron header__top-links-span r s">
+                            {/* {!isOpenD2 ? <div style={{padding:"0 8px"}} className="chevron-down header__dropdown-btn-chevron header__top-links-span r s">
                                 <IconRightchevron />
                             </div> : <div style={{padding:"0 8px"}} className="chevron-up header__dropdown-btn-chevron header__top-links-span r s">
                                 <IconRightchevron />
-                            </div>}
+                            </div>} */}
                         </div>
-                        <div className={`header__dropdown-list header__dropdown-lang ${!isOpenD2 ? "header__dropdown-inactive" : ""}`}>
+                        <div className={`header__dropdown-list b ${!isOpenD2 ? "header__dropdown-inactive" : ""}`}>
                             <div className="header__dropdown-list-item header__dropdown-list-lang" onClick={()=>setLang(Flags.UK)}>
                                 <IconUk />
                                 <span>{Flags.UK}</span>
@@ -179,7 +179,7 @@ export const HeaderTop = () => {
                             </div>
                         </div>
                     </div>
-                    <span className="header__top-links-link a">Login</span>
+                    <span className="header__top-links-link a">Вхід</span>
                     </div>
                 </div>
             </div>
