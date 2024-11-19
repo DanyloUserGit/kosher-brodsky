@@ -1,4 +1,5 @@
 import dayjs from "dayjs";
+import { useNavigate } from "react-router-dom";
 
 export const MainCard = ({
     imgSrc,
@@ -11,11 +12,25 @@ export const MainCard = ({
     price:number,
     validDate?:Date
 }) => {
+    const navigate = useNavigate();
+
+    const toProductPage = () => {
+        navigate('/kosher-brodsky/product', {state:{
+            paragraph: "Всі товари",
+            category: "Солодощі",
+            subCategory: "Пироги та кекси",
+            productName: title,
+            productImg: imgSrc,
+            productPrice: price,
+            productPresent: 8,
+        }})
+    }
+
     return(
         <div className="main-content__special-card">
             <div className="main-content__special-card-content">
                 <img src={imgSrc} />
-                <div className="main-content__special-card-content-desc">
+                <div className="main-content__special-card-content-desc" onClick={toProductPage}>
                     <div className="main-content__special-card-content-desc-btn">
                         Лише {price}₴
                     </div>

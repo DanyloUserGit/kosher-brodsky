@@ -1,0 +1,155 @@
+.product{
+    max-width: 90%;
+    margin: 225px auto 0 auto;
+    &__details{
+        margin: 15px 0;
+        font-family: 'RagSans', 'Open Sans', 'Open Sans Hebrew';
+        &-menu{
+            padding: 10px;
+            &-item{
+                color: #333333B3;
+                font-size: 18px;
+                padding: 10px;
+                cursor: pointer;
+                user-select: none;
+                &-active{
+                    color: #333333;
+                    border-top: 3px solid #3CC7F2;
+                    max-width: fit-content;
+                }
+            }
+        }
+        &-payment{
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+            &-element{
+                margin: 10px 0;
+            }
+            &-title{
+                color: #242424;
+                font-size: 22px;
+                font-weight: 500;
+                margin-bottom: 10px;
+            }
+        }
+        &-item{
+            &-name{
+                color: #2D2D2D;
+            }
+            &-det{
+                &-el{
+                    display: flex;
+                    justify-content: space-between;
+                    padding: 20px;
+                    font-size: 12px;
+                    span{
+                        color: #333333;
+                        b{
+                            color: #242424;
+                            font-weight: 600;
+                        }
+                    }
+                    &-b{
+                        border-bottom: 1px solid rgba(0,0,0,0.1);
+                    }
+                }
+            }
+        }
+    }
+    &__item{
+        font-family: 'RagSans', 'Open Sans', 'Open Sans Hebrew';
+        border-bottom: 1px solid rgba(0,0,0,0.1);
+        padding: 10px 0;
+        &-category{
+            margin: 20px 10px;
+            display: flex;
+            font-size: 14px;
+            width: 100%;
+            color: #777777;
+            span{
+                font-weight: 500;
+                color: #333333;
+            }
+        }
+        &-info{
+            display: flex;
+            justify-content: space-around;
+            padding: 30px 0;
+            img{
+                width: 300px;
+                height: 280px;
+            }
+            &-text{
+                display: flex;
+                flex-direction: column;
+                &-title{
+                    font-size: 23px;
+                    color: #333333;
+                    font-weight: 600;
+                }
+                &-price{
+                    color: #3CC7F2;
+                    font-size: 18px;
+                    font-weight: 600;
+                    margin: 10px 0;
+                }
+                &-present{
+                    color: #333333;
+                    font-size: 13px;
+                    font-weight: 600;
+                    margin: 10px 0;
+                }
+                &-cart{
+                    display: flex;
+                    gap: 8px;
+                    height: 42px;
+                    &-add{
+                        display: flex;
+                        border: 1px solid rgba(0,0,0,0.1);
+                        &-btn{
+                            padding: 10px;
+                            text-align: center;
+                            user-select: none;
+                            cursor: pointer;
+                            &-l{
+                                border-right: 1px solid rgba(0,0,0,0.1);
+                            }
+                            &-r{
+                                border-left: 1px solid rgba(0,0,0,0.1);
+                            }
+                        }
+                        &-input{
+                            width: 30px;
+                            padding: 10px;
+                            text-align: center;
+                            input{
+                                width: 100%;
+                            }
+                        }
+                    }
+                    &-btn{
+                        background-color: #3CC7F2;
+                        text-align: center;
+                        padding: 12px;
+                        color: #ffffff;
+                        user-select: none;
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 930px){
+    .product{
+        &__item{
+            &-info{
+                flex-direction: column;
+                align-items: center;
+                padding: 30px 0 60px 0;
+            }
+        }
+    }
+}   

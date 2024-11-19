@@ -3,3 +3,9 @@ export enum Flags {
     UK="ukr",
     IW="iw"
 }
+
+export enum ProductDetail {
+    DESC = "DESC",
+    DET = "DET",
+    PAYMENT = "PAYMENT"
+}
