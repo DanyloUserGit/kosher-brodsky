@@ -15,10 +15,25 @@ import { IconGlass } from "../../svg/IconGlass";
 import { IconEquipment } from "../../svg/IconEquipment";
 import { IconShoping } from "../../svg/IconShoping";
 import { IconRightchevron } from "../../svg/IconRightchevron";
+import { useNavigate } from "react-router-dom";
+import { CatalogNavigation, ProductCategories, ProductCategoriesLinks } from "../../../types/enum";
+import { categoryType, catList } from "../../../utils/categories";
 
 export const HeaderBottom = () => {
     const [isOpen, setIsOpen] = useState(false);
     const [isOpenShopping, setIsOpenShopping] = useState(false);
+
+    const navigate = useNavigate();
+
+    const navigateToCategory = ({
+        link,
+        state
+    }:{
+        link:string,
+        state:categoryType
+    }) => {
+        navigate(`${link}`, {state:{...state, icon:""}})
+    }
 
     return(
         <div className="header__bottom">
@@ -29,80 +44,27 @@ export const HeaderBottom = () => {
                     Каталог
                 </div>
                 <div className={`header__bottom-start-list ${isOpen && "header__bottom-start-list-active"}`}>
-                    <div className="header__bottom-start-list-item">
-                        <IconMeat />
-                        <span>М'яcо та птиця</span>
-                    </div>
-                    <div className="header__bottom-start-list-item">
-                        <IconSousage />
-                        <span>Ковбаcи та cоcиcки</span>
-                    </div>
-                    <div className="header__bottom-start-list-item">
-                        <IconSweets />
-                        <span>Солодощі</span>
-                    </div>
-                    <div className="header__bottom-start-list-item">
-                        <IconFroze />
-                        <span>Заморожування</span>
-                    </div>
-                    <div className="header__bottom-start-list-item">
-                        <IconAdultMilk />
-                        <span>Молочна продукція</span>
-                    </div>
-                    <div className="header__bottom-start-list-item">
-                        <IconJuice />
-                        <span>Напої</span>
-                    </div>
-                    <div className="header__bottom-start-list-item">
-                        <IconBread />
-                        <span>Хліб</span>
-                    </div>
-                    <div className="header__bottom-start-list-item">
-                        <IconJar />
-                        <span>Бакалія</span>
-                    </div>
-                    <div className="header__bottom-start-list-item">
-                        <IconBakery />
-                        <span>Снеки</span>
-                    </div>
-                    <div className="header__bottom-start-list-item">
-                        <IconJar />
-                        <span>Конcерви</span>
-                    </div>
-                    {/* <div className="header__bottom-start-list-item e">
-                        <IconEaster />
-                        <span></span>
-                    </div> */}
-                    <div className="header__bottom-start-list-item">
-                        <IconMilk />
-                        <span>Дитяче харчування</span>
-                    </div>
-                    <div className="header__bottom-start-list-item">
-                        <IconSea />
-                        <span>Рибна продукція</span>
-                    </div>
-                    <div className="header__bottom-start-list-item">
-                        <IconGlass />
-                        <span>Чай кави какао</span>
-                    </div>
-                    <div className="header__bottom-start-list-item">
-                        <IconEquipment />
-                        <span>Вcе для дому та cвічки</span>
-                    </div>
+                    {catList.map((item)=>(
+                        <div className="header__bottom-start-list-item" onClick={()=>
+                            navigateToCategory({link:item.link,state:{...item}})}>
+                            {item.icon()}
+                            <span>{item.title}</span>
+                        </div>
+                    ))}
                 </div>
             </div>
             <div className="header__bottom-menu">
                 <div className="header__bottom-menu-item">
-                    <img src="Images/sale.png" />
+                    <img src="https://danylousergit.github.io/kosher-brodsky/Images/sale.png" />
                 </div>
                 <div className="header__bottom-menu-item">
-                    <img src="Images/icons8-reload-50.png" />
+                    <img src="https://danylousergit.github.io/kosher-brodsky/Images/icons8-reload-50.png" />
                 </div>
                 <div className="header__bottom-menu-item">
-                    <img src="Images/icons8-add-document-64.png" />
+                    <img src="https://danylousergit.github.io/kosher-brodsky/Images/icons8-add-document-64.png" />
                 </div>
                 <div className="header__bottom-menu-item">
-                    <img src="Images/icons8-delivery-64.png" />
+                    <img src="https://danylousergit.github.io/kosher-brodsky/Images/icons8-delivery-64.png" />
                 </div>
             </div>
             <div className="header__bottom-cart">

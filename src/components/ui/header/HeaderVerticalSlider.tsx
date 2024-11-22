@@ -1,31 +1,32 @@
 import { ReactNode } from "react";
 import Slider from "react-slick";
 
-export const MainSlider = ({
+export const HeaderVerticalSlider = ({
     children,
     className,
-    sliderProperties
 }:{
     children:ReactNode,
     className:string,
-    sliderProperties?:{}
 }) => {
-    let settings = sliderProperties || {
-        dots: true,
-        infinite: true,
+    let settings = {
+        dots: false,
+        infinite: false,
         speed: 500,
         slidesToShow: 1,
         slidesToScroll: 1,
         swipeToSlide: true,
-        autoplay:true,
-        autoplaySpeed: 5000,
+        autoplay:false,
         cssEase: "linear",
         arrows:false,
-        
+        vertical: true,
+        verticalSwiping: true,
+        adaptiveHeight:true,
+        variableHeight:false
       };
-      return (
+
+    return(
         <Slider className={className} {...settings}>
             {children}
         </Slider>
-      );
+    )
 }
