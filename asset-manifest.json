@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/kosher-brodsky/static/css/main.d1ae7dea.css",
-    "main.js": "/kosher-brodsky/static/js/main.d4b96a01.js",
+    "main.css": "/kosher-brodsky/static/css/main.db562388.css",
+    "main.js": "/kosher-brodsky/static/js/main.aaa3a310.js",
     "static/media/home-specials-background.png": "/kosher-brodsky/static/media/home-specials-background.c27aaf69f0131f6b2eb4.png",
     "static/media/slick.svg": "/kosher-brodsky/static/media/slick.2630a3e3eab21c607e21.svg",
     "static/media/slick.eot": "/kosher-brodsky/static/media/slick.a4e97f5a2a64f0ab1323.eot",
     "static/media/slick.ttf": "/kosher-brodsky/static/media/slick.c94f7671dcc99dce43e2.ttf",
     "static/media/slick.woff": "/kosher-brodsky/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/kosher-brodsky/index.html",
-    "main.d1ae7dea.css.map": "/kosher-brodsky/static/css/main.d1ae7dea.css.map",
-    "main.d4b96a01.js.map": "/kosher-brodsky/static/js/main.d4b96a01.js.map"
+    "main.db562388.css.map": "/kosher-brodsky/static/css/main.db562388.css.map",
+    "main.aaa3a310.js.map": "/kosher-brodsky/static/js/main.aaa3a310.js.map"
   },
   "entrypoints": [
-    "static/css/main.d1ae7dea.css",
-    "static/js/main.d4b96a01.js"
+    "static/css/main.db562388.css",
+    "static/js/main.aaa3a310.js"
   ]
 }
